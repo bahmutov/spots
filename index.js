@@ -12,7 +12,7 @@ function spots(fn) {
     });
     // console.log('calling', fn.name, 'with args', combinedArgs);
     return fn.apply(null, combinedArgs);
-  }
+  };
 }
 
 module.exports = spots;
