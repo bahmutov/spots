@@ -37,7 +37,7 @@ It works very nice to solve [JavaScript Madness][madness] problem.
 // returns [1, 2, 3]
 ```
 
-You can use **spots** with [functional-pipeline][fp] to apply some arguments *across all functions*.
+You can use **spots** with [functional-pipeline][fp] to apply arguments *to the individual steps*.
 
 ```js
 var fp = require('functional-pipeline');
@@ -53,6 +53,7 @@ fp(
 
 Related: 
 
+* [Point-free is not pointless](http://bahmutov.calepin.co/point-free-programming-is-not-pointless.html)
 * [Selective application](http://bahmutov.calepin.co/selective-partial-application.html)
 * [functional-pipeline][fp]
 * [heroin](https://github.com/bahmutov/heroin)
