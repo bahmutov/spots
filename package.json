@@ -1,0 +1,31 @@
+{
+  "name": "spots",
+  "version": "0.0.0",
+  "description": "Partial function argument binding with placeholders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bahmutov/spots.git"
+  },
+  "keywords": [
+    "functional",
+    "javascript",
+    "partial",
+    "application",
+    "binding",
+    "placeholder"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/spots/issues"
+  },
+  "homepage": "https://github.com/bahmutov/spots",
+  "devDependencies": {
+    "functional-pipeline": "0.2.4",
+    "lazy-ass": "0.5.3"
+  }
+}
