@@ -1,6 +1,6 @@
 {
   "name": "spots",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Partial function argument binding with placeholders",
   "main": "index.js",
   "scripts": {

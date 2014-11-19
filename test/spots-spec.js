@@ -88,4 +88,11 @@ describe('spots', function () {
     la(result[1] === 2);
     la(result[2] === 3);
   });
+
+  it('can apply multiple multiple args', function () {
+    function add4(a, b, c, d) { return a + b + c + d; }
+    var applyEven = S(add4, S, 1, S, 2);
+    var sum = applyEven(-1, -2);
+    la(sum === 0);
+  });
 });

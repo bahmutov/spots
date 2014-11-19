@@ -13,9 +13,19 @@ var S = require('spots');
 function sub(a, b) {
   return a - b;
 }
+// use library itself as a placeholder
 var minus1 = S(sub, S, 1);
 // minus1 = sub(_, 1) function
 minus1(9); // 8, same as sub(9, 1);
+```
+
+It can apply more than 1 argument.
+
+```js
+function add4(a, b, c, d) { return a + b + c + d; }
+var applyEven = S(add4, S, 1, S, 2);
+applyEven(-1, -2); // 0
+// equivalent to add4(-1, 1, -2, 2);
 ```
 
 It works very nice to solve [JavaScript Madness][madness] problem.
@@ -28,6 +38,7 @@ It works very nice to solve [JavaScript Madness][madness] problem.
 You can use **spots** with [functional-pipeline][fp] to apply some arguments *across all functions*.
 
 ```js
+var fp = require('functional-pipeline');
 function add(a, b) { return a + b; }
 function sub(a, b) { return a - b; }
 fp(
@@ -40,8 +51,8 @@ fp(
 
 Related: 
 
-* [functional-pipeline][fp]
 * [Selective application](http://bahmutov.calepin.co/selective-partial-application.html)
+* [functional-pipeline][fp]
 * [heroin](https://github.com/bahmutov/heroin)
 
 ### Small print
