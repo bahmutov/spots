@@ -10,7 +10,8 @@ function spots(fn) {
         combinedArgs.push(arg);
       }
     });
-    // console.log('calling', fn.name, 'with args', combinedArgs);
+    // copy the rest of arguments (if any);
+    combinedArgs.push.apply(combinedArgs, moreArgs);
     return fn.apply(null, combinedArgs);
   };
 }

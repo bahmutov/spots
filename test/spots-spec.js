@@ -95,4 +95,11 @@ describe('spots', function () {
     var sum = applyEven(-1, -2);
     la(sum === 0);
   });
+
+  it('can left apply', function () {
+    var add2 = S(add, 2);
+    la(typeof add2 === 'function');
+    var result = add2(10);
+    la(result === 12, '2 + 10 =', result);
+  });
 });

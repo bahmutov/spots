@@ -1,7 +1,7 @@
 {
   "name": "spots",
   "description": "Partial function argument binding with placeholders",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": {
     "url": "https://github.com/bahmutov/spots/issues"
