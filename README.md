@@ -2,6 +2,8 @@
 
 > Partial function argument binding with placeholders
 
+[![NPM][spots-icon] ][spots-url]
+
 [![Build status][spots-ci-image] ][spots-ci-url]
 [![dependencies][spots-dependencies-image] ][spots-dependencies-url]
 [![devdependencies][spots-devdependencies-image] ][spots-devdependencies-url]
@@ -95,6 +97,8 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
+[spots-icon]: https://nodei.co/npm/spots.png?downloads=true
+[spots-url]: https://npmjs.org/package/spots
 [spots-ci-image]: https://travis-ci.org/bahmutov/spots.png?branch=master
 [spots-ci-url]: https://travis-ci.org/bahmutov/spots
 [spots-dependencies-image]: https://david-dm.org/bahmutov/spots.png
