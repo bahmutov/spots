@@ -51,6 +51,9 @@ fp(
 // add( sub(1, 3), 20 )
 ```
 
+Real world example [chdir-promise index.js](https://github.com/bahmutov/chdir-promise/blob/master/index.js)
+where we use *spots* to pass argument to `Q.try` method.
+
 Related: 
 
 * [Point-free is not pointless](http://bahmutov.calepin.co/point-free-programming-is-not-pointless.html)
