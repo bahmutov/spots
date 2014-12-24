@@ -6,6 +6,7 @@
   "bugs": {
     "url": "https://github.com/bahmutov/spots/issues"
   },
+  "contributors": [],
   "devDependencies": {
     "functional-pipeline": "0.2.4",
     "grunt-contrib-jshint": "0.10.0",
