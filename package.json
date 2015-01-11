@@ -1,7 +1,7 @@
 {
   "name": "spots",
   "description": "Partial function argument binding with placeholders",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": {
     "url": "https://github.com/bahmutov/spots/issues"
@@ -9,6 +9,7 @@
   "contributors": [],
   "devDependencies": {
     "functional-pipeline": "0.2.4",
+    "grunt-clean-console": "0.1.1",
     "grunt-contrib-jshint": "0.10.0",
     "grunt-contrib-watch": "0.6.1",
     "grunt-deps-ok": "0.5.1",
@@ -21,6 +22,7 @@
     "karma-coverage": "0.2.7",
     "karma-mocha": "0.1.10",
     "karma-nested-reporter": "0.1.3",
+    "karma-node2umd": "1.0.0",
     "karma-phantomjs-launcher": "0.1.4",
     "lazy-ass": "0.5.3",
     "matchdep": "0.3.0",

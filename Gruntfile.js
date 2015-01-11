@@ -34,6 +34,15 @@ module.exports = function(grunt) {
       }
     },
 
+    'clean-console': {
+      all: {
+        options: {
+          url: 'test/index.html',
+          timeout: 1 // seconds to wait for any errors
+        }
+      }
+    },
+
     watch: {
       options: {
         atBegin: true

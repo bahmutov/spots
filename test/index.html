@@ -9,7 +9,9 @@
     <h1>spots</h1>
     <script>
       console.log('spots');
-      console.assert(typeof spots === 'function', 'cannot find spots function');
+      if (typeof spots !== 'function') {
+        throw new Error('cannot find spots function');
+      }
     </script>
   </body>
 </html>
