@@ -28,7 +28,9 @@ module.exports = function(grunt) {
       wrap: {
         src: 'src/spots.js',
         dest: 'index.js',
-        objectToExport: 'spots'
+        objectToExport: 'spots',
+        amdModuleId: 'spots',
+        index: 2
       }
     },
 
