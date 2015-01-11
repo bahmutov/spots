@@ -6,11 +6,12 @@ module.exports = function(grunt) {
 
     jshint: {
       all: [
-        'index.js'
+        'src/*.js'
       ],
       specs: ['test/*.js'],
       options: {
-        jshintrc: '.jshintrc'
+        jshintrc: '.jshintrc',
+        reporter: require('jshint-summary')
       }
     },
 
@@ -20,6 +21,14 @@ module.exports = function(grunt) {
           reporter: 'spec'
         },
         src: ['test/*-spec.js']
+      }
+    },
+
+    umd: {
+      wrap: {
+        src: 'src/spots.js',
+        dest: 'index.js',
+        objectToExport: 'spots'
       }
     },
 
@@ -39,5 +48,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', ['mochaTest']);
   grunt.registerTask('default',
-    ['nice-package', 'deps-ok', 'jshint', 'test']);
+    ['nice-package', 'deps-ok', 'jshint', 'umd', 'test']);
 };
