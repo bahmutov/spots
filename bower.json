@@ -1,0 +1,20 @@
+{
+  "name": "spots",
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "version": "0.4.0",
+  "description": "Partial function argument binding with placeholders",
+  "license": "MIT",
+  "homepage": "https://github.com/bahmutov/spots",
+  "main": "index.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "docs",
+    "src",
+    "Gruntfile.js",
+    "package.json"
+  ]
+}

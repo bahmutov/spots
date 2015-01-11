@@ -57,7 +57,7 @@ module.exports = function(grunt) {
   var plugins = require('matchdep').filterDev('grunt-*');
   plugins.forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('test', ['mochaTest']);
+  grunt.registerTask('test', ['mochaTest', 'clean-console']);
   grunt.registerTask('default',
-    ['nice-package', 'deps-ok', 'jshint', 'umd', 'test']);
+    ['nice-package', 'sync', 'deps-ok', 'jshint', 'umd', 'test']);
 };

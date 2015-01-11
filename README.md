@@ -61,6 +61,8 @@ Related:
 * [functional-pipeline][fp]
 * [heroin](https://github.com/bahmutov/heroin)
 
+Available on NPM and bower under name `spots`.
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2014
