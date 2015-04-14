@@ -102,4 +102,19 @@ describe('spots', function () {
     var result = add2(10);
     la(result === 12, '2 + 10 =', result);
   });
+
+  it('works with a method', function () {
+    var calc = {
+      name: 'calc',
+      add4: function (a, b, c, d) {
+        // console.log('a', a, 'b', b, 'c', c, 'd', d, 'name', this.name);
+        la(this.name === 'calc', 'invalid name', this.name);
+        return a + b + c + d;
+      }
+    };
+    la(calc.add4(1, 2, 3, 4) === 10, 'using as a method');
+    /* jshint -W106 */
+    var add_2_4 = S(calc.add4, S, 2, S, 4).bind(calc);
+    la(add_2_4(1, 3) === 10, 'using with spots');
+  });
 });

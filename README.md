@@ -54,10 +54,23 @@ fp(
 Real world example [chdir-promise index.js](https://github.com/bahmutov/chdir-promise/blob/master/index.js)
 where we use *spots* to pass argument to `Q.try` method.
 
+If there is a context (like filling some arguments to a method), you can bind to the object after applying **spots**
+
+```js
+var calc = {
+  name: 'calc',
+  add4: function (a, b, c, d) {
+    return this.name + ' ' + a + b + c + d;
+  }
+};
+var add_2_4 = S(calc.add4, S, 2, S, 4).bind(calc);
+add_2_4(1, 3); // calc 10
+```
+
 Related: 
 
-* [Point-free is not pointless](http://bahmutov.calepin.co/point-free-programming-is-not-pointless.html)
-* [Selective application](http://bahmutov.calepin.co/selective-partial-application.html)
+* [Point-free is not pointless](http://glebbahmutov.com/blog/point-free-programming-is-not-pointless/)
+* [Selective application](http://glebbahmutov.com/blog/selective-partial-application/)
 * [functional-pipeline][fp]
 * [heroin](https://github.com/bahmutov/heroin)
 
@@ -69,7 +82,7 @@ Author: Gleb Bahmutov &copy; 2014
 
 * [@bahmutov](https://twitter.com/bahmutov)
 * [glebbahmutov.com](http://glebbahmutov.com)
-* [blog](http://bahmutov.calepin.co/)
+* [blog](http://glebbahmutov.com/blog)
 
 License: MIT - do anything with the code, but don't blame me if it does not work.
 
