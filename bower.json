@@ -20,11 +20,11 @@
     "Gleb Bahmutov <gleb.bahmutov@gmail.com>"
   ],
   "keywords": [
+    "application",
+    "binding",
     "functional",
     "javascript",
     "partial",
-    "application",
-    "binding",
     "placeholder"
   ]
 }
