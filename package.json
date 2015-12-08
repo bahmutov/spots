@@ -6,10 +6,22 @@
   "bugs": {
     "url": "https://github.com/bahmutov/spots/issues"
   },
+  "config": {
+    "pre-git": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": [
+        "npm test"
+      ],
+      "pre-push": [],
+      "post-commit": [],
+      "post-merge": []
+    }
+  },
   "contributors": [],
   "devDependencies": {
     "functional-pipeline": "0.4.1",
     "grunt-clean-console": "0.3.0",
+    "grunt-cli": "0.1.13",
     "grunt-contrib-jshint": "0.11.3",
     "grunt-contrib-watch": "0.6.1",
     "grunt-deps-ok": "0.8.0",
@@ -27,7 +39,7 @@
     "karma-phantomjs-launcher": "0.2.1",
     "lazy-ass": "0.6.0",
     "matchdep": "1.0.0",
-    "pre-git": "0.6.2"
+    "pre-git": "2.0.2"
   },
   "engines": {
     "node": ">= 0.8.0"
@@ -43,16 +55,14 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "pre-commit": [
-    "npm test",
-    "npm version"
-  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:bahmutov/spots.git"
   },
   "scripts": {
     "browser": "node node_modules/karma/bin/karma start test/karma.conf.js",
+    "build": "grunt",
+    "commit": "commit-wizard",
     "test": "grunt"
   }
 }
